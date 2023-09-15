@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
 from scipy import stats
 
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 6, 8, 10]
+x = [2, 4, 6, 8]
+# y = [2*i+3 for i in x]
+y = [7, 10, 16, 19]
+print(x, y)
 slope, intercept, correlationcoefficient, p, slopeerror = stats.linregress(
     x, y
 )  # Fit a straight line to the data
@@ -19,6 +21,7 @@ plt.grid(True)
 plt.title("Linear Regression")
 plt.xlabel("X")
 plt.ylabel("Y")
-predictedvalue = linefunc(100)  # Predict the value
-print("Predicted value at 100 ", predictedvalue)
+predictedx = 1
+predictedvalue = linefunc(predictedx)  # Predict the value
+print("Predicted value at ", predictedx, predictedvalue)
 plt.show()
