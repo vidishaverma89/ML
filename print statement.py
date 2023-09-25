@@ -1,0 +1,5 @@
+print("One",end=",")
+print("Two")
+print(1,2,3,4,5,sep="\n")
+print("Three","Four",sep=",",end="#")
+print("Five","Six")

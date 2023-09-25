@@ -5,7 +5,7 @@ y=[31,33,34,35]
 slope, intercept, correlationcoefficient, p, slopeerror = stats.linregress(x,y)
 def linefunc(x):
   return slope * x + intercept
-
+    
 model = list(map(linefunc, x))
 plt.scatter(x,y)
 plt.plot(x,model)
