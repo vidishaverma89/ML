@@ -1,5 +1,6 @@
-print("One",end=",")
-print("Two")
-print(1,2,3,4,5,sep="\n")
-print("Three","Four",sep=",",end="#")
-print("Five","Six")
+print("0")
+print("00")
+print("000")
+print("0000")
+
+print("0\n00\n0000000")
