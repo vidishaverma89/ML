@@ -11,7 +11,7 @@ slope, intercept, correlationcoefficient, p, slopeerror = stats.linregress(
 
 
 def linefunc(x):
-    return slope * x + intercept  # y=mx+c wher m is the slope and c is the intecept
+    return slope * x + intercept  # y=mx+c where m is the slope and c is the intecept
 
 
 model = list(map(linefunc, x))  # Get a fitted line
